@@ -1,0 +1,136 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ 
+ul{
+     list-style: none;
+}
+ 
+body *{
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    line-height: 160%;
+    color: oldlace;
+    
+}
+
+body{
+    background: rgb(3,2,19);
+    background: linear-gradient(45deg, rgba(3,2,19,1) 0%, rgba(121,9,111,1) 82%, rgba(161,5,134,1) 100%);
+    
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+header img{
+    max-width: 42px;
+    padding: 4px;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 12px;
+}
+
+main{
+    border-top: .1px solid rgba(253,245,230,.2);
+    margin-bottom: 42px;
+}
+
+nav{
+    display: flex;
+    gap: 18px;
+}
+
+#main-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 72px 0px;
+}
+
+.main-img{
+    background: rgb(64,200,22);
+    background: linear-gradient(90deg, rgba(64,200,22,1) 0%, rgba(9,79,121,1) 50%, rgba(255,201,0,1) 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+}
+
+#main-page img{
+    max-width: 520px;
+    border-radius: 50%;
+}
+
+.title h1{
+    font-size: 70px;
+}
+
+.title h5{
+    font-size: 17px;
+}
+
+.title{
+    width: 600px;
+    word-wrap: normal;
+}
+
+#about{
+    border-top: .1px solid rgba(253,245,230,.4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 70px auto;
+    padding-top: 80px;
+    text-align:center;
+    font-weight: lighter;
+    font-size: small;
+    max-width: 80%;
+}
+
+#about h2{
+    font-size: 35px;
+}
+
+#about h4{
+    font-size: 15px;
+}
+
+#about p{
+    font-size: 20px;
+}
+
+button{
+    margin: auto;
+    background-color: #0054c0;
+    width: 180px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    color: oldlace;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+footer{
+    border-top: .1px solid rgba(253,245,230,.2);
+}
