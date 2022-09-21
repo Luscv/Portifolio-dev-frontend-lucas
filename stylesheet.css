@@ -125,12 +125,112 @@ button{
     font-weight: 600;
 }
 
+#tecnologias{
+    padding-top: 80px;
+    width: 80%;
+    margin: 70px auto;
+    text-align: center;
+    border-top: .1px solid rgba(253,245,230,.4);
+}
 
+.tecs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 42px;
+}
 
+.tecs li{
+    background: rgb(64,200,22);
+    background: linear-gradient(90deg, rgba(64,200,22,1) 0%, rgba(9,79,121,1) 50%, rgba(255,201,0,1) 100%);
+    border-radius: 15px;
+    display: flex;
+    padding-top: 3px;
+}
 
+.tecs li div{
+    background: #2A2634;
+    border-radius: 12px;
+}
 
+#projects{
+    padding-top: 80px;
+    width: 80%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    text-align: center;
+    border-top: .1px solid rgba(253,245,230,.4);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.project-frames{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.project-frames li{
+    width: 220px;
+    height: 390px;
+    padding-top: 4px;
+    border-radius: 15px;
+    background: rgb(64,200,22);
+    background: linear-gradient(90deg, rgba(64,200,22,1) 0%, rgba(9,79,121,1) 50%, rgba(255,201,0,1) 100%);
+}
+
+.project-frames li div{
+    width: 220px;
+    height: 390px;
+    background: #2A2634;
+    border-radius: 12px;
+}
+
+.project-frames li img{
+    width: 220px;
+    height: 390px; 
+    border-radius: 12px;
+}
+
+.project-frames li p{
+    margin-top: 12px;
+} 
 
 footer{
+    padding-left: 15px;
+    padding-top: 30px;
     border-top: .1px solid rgba(253,245,230,.2);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#contato div{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+#contato h3{
+    padding-bottom: 30px;
+}
+
+.linkedin a{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.github a{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.icon-link a{
+    font-size: 8px;
 }
