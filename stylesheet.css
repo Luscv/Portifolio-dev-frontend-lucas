@@ -43,6 +43,7 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 4px 22px;
+    animation: FromTop .7s .2s backwards;
 }
 
 main{
@@ -53,6 +54,15 @@ main{
 nav{
     display: flex;
     gap: 18px;
+    
+}
+
+nav a{
+    transition: all 0.5s;
+}
+
+nav a:hover{
+    transform: scale(1.1);
 }
 
 #main-page{
@@ -61,7 +71,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 72px 0px;
+    padding: 120px 0px;
 }
 
 .main-img{
@@ -70,10 +80,17 @@ nav{
     border-radius: 50%;
     display: flex;
     padding: 4px;
+    transition: all 0.5s;
+    animation: ToRight .7s .2s backwards;
+}
+
+.main-img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 
 #main-page img{
-    max-width: 520px;
+    max-width: 320px;
     border-radius: 50%;
 }
 
@@ -88,6 +105,7 @@ nav{
 .title{
     width: 600px;
     word-wrap: normal;
+    animation: ToLeft .7s .2s backwards;
 }
 
 #about{
@@ -125,6 +143,12 @@ button{
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     color: oldlace;
     font-weight: 600;
+    transition: all 0.5s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 #tecnologias{
@@ -150,6 +174,11 @@ button{
     border-radius: 15px;
     display: flex;
     padding-top: 3px;
+    transition: all 0.5s;
+}
+
+.tecs li:hover{
+    transform: scale(1.1);
 }
 
 .tecs li div{
@@ -186,6 +215,11 @@ button{
     border-radius: 15px;
     background: rgb(64,200,22);
     background: linear-gradient(90deg, rgba(64,200,22,1) 0%, rgba(9,79,121,1) 50%, rgba(255,201,0,1) 100%);
+    transition: all 0.5s;
+}
+
+.project-frames li:hover{
+    transform: scale(1.1);
 }
 
 .project-frames li div{
@@ -239,4 +273,43 @@ footer{
 
 .icon-link a{
     font-size: 8px;
+}
+
+
+
+
+@keyframes ToLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes ToRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes FromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
